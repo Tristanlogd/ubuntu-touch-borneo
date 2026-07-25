@@ -1,0 +1,40 @@
+deviceinfo_name="Motorola moto g power (2021)"
+deviceinfo_manufacturer="Motorola"
+deviceinfo_codename="borneo"
+deviceinfo_arch="aarch64"
+deviceinfo_kernel_arch="arm64"
+
+deviceinfo_halium_version="11"
+deviceinfo_ubuntu_touch_release="24.04-2.x"
+
+deviceinfo_kernel_source="https://github.com/YOUR-GITHUB-USER/android_kernel_motorola_sm6225"
+deviceinfo_kernel_source_branch="halium-11-borneo"
+deviceinfo_kernel_defconfig="vendor/ext_config/borneo-default.config halium.config"
+deviceinfo_kernel_clang_compile="true"
+deviceinfo_kernel_image_name="Image"
+
+# Real cmdline, pulled directly from your unpacked boot.img — not the sample's placeholder
+deviceinfo_kernel_cmdline="androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048"
+
+deviceinfo_bootimg_header_version="2"
+deviceinfo_flash_pagesize="4096"
+deviceinfo_flash_offset_dtb="0x01f00000"
+deviceinfo_bootimg_partition_size="100663296"
+deviceinfo_bootimg_os_version="11"
+
+# Real, from BoardConfig.mk — NOT the boot header's 2026-07 (that's just your build machine's
+# compile-time date, an artifact, not a real patch claim)
+deviceinfo_bootimg_os_patch_level="2023-02-01"
+
+# Real DTB — confirmed from your actual build output
+deviceinfo_bootimg_prebuilt_dtb="bengal-moto-base-borneo.dtb"
+
+# Real, confirmed-working dtbo.img — not generated, the actual flashed-and-booted file
+deviceinfo_prebuilt_dtbo="dtbo.img"
+deviceinfo_dtbo="false"
+deviceinfo_skip_dtbo_partition="false"
+
+deviceinfo_has_recovery_partition="true"
+deviceinfo_recovery_partition_size="102400000"
+
+deviceinfo_use_overlaystore="true"
